@@ -9,12 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    private let credentials = APICredentials.init()
+    internal var token = AuthToken.init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Get our token data
+        GETToken(credentials: credentials)
+        // Wait until our token is properly created
+        while token.token == "0" {
+            
+        }
+        print(token.token)
     }
 
+    
 
 }
 

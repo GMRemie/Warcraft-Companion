@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D407695822266BB100E5544F /* APICredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407695722266BB100E5544F /* APICredentials.swift */; };
+		D407695A22266C1F00E5544F /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407695922266C1F00E5544F /* AuthToken.swift */; };
+		D407695D2227008C00E5544F /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407695C2227008C00E5544F /* APIRequests.swift */; };
+		D4076960222709E700E5544F /* VC_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407695F222709E700E5544F /* VC_Extension.swift */; };
 		D47915D02225CF7D002B7123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47915CF2225CF7D002B7123 /* AppDelegate.swift */; };
 		D47915D22225CF7D002B7123 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47915D12225CF7D002B7123 /* ViewController.swift */; };
 		D47915D52225CF7D002B7123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47915D32225CF7D002B7123 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D407695722266BB100E5544F /* APICredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICredentials.swift; sourceTree = "<group>"; };
+		D407695922266C1F00E5544F /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		D407695C2227008C00E5544F /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
+		D407695F222709E700E5544F /* VC_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Extension.swift; sourceTree = "<group>"; };
 		D47915CC2225CF7D002B7123 /* WowCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47915CF2225CF7D002B7123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47915D12225CF7D002B7123 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D407695622266B8E00E5544F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D407695722266BB100E5544F /* APICredentials.swift */,
+				D407695922266C1F00E5544F /* AuthToken.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		D407695B2227005900E5544F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D407695C2227008C00E5544F /* APIRequests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D407695E222709D400E5544F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D407695F222709E700E5544F /* VC_Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D47915C32225CF7D002B7123 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +87,9 @@
 		D47915CE2225CF7D002B7123 /* WowCompanion */ = {
 			isa = PBXGroup;
 			children = (
+				D407695E222709D400E5544F /* Extensions */,
+				D407695B2227005900E5544F /* Networking */,
+				D407695622266B8E00E5544F /* Objects */,
 				D47915CF2225CF7D002B7123 /* AppDelegate.swift */,
 				D47915D12225CF7D002B7123 /* ViewController.swift */,
 				D47915D32225CF7D002B7123 /* Main.storyboard */,
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4076960222709E700E5544F /* VC_Extension.swift in Sources */,
 				D47915D22225CF7D002B7123 /* ViewController.swift in Sources */,
+				D407695A22266C1F00E5544F /* AuthToken.swift in Sources */,
+				D407695D2227008C00E5544F /* APIRequests.swift in Sources */,
 				D47915D02225CF7D002B7123 /* AppDelegate.swift in Sources */,
+				D407695822266BB100E5544F /* APICredentials.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
