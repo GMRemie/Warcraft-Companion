@@ -11,11 +11,17 @@
 		D407695A22266C1F00E5544F /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407695922266C1F00E5544F /* AuthToken.swift */; };
 		D407695D2227008C00E5544F /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407695C2227008C00E5544F /* APIRequests.swift */; };
 		D4076960222709E700E5544F /* VC_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407695F222709E700E5544F /* VC_Extension.swift */; };
+		D40769642227742400E5544F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40769632227742400E5544F /* SearchViewController.swift */; };
 		D47915D02225CF7D002B7123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47915CF2225CF7D002B7123 /* AppDelegate.swift */; };
 		D47915D22225CF7D002B7123 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47915D12225CF7D002B7123 /* ViewController.swift */; };
 		D47915D52225CF7D002B7123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47915D32225CF7D002B7123 /* Main.storyboard */; };
 		D47915D72225CF7E002B7123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47915D62225CF7E002B7123 /* Assets.xcassets */; };
 		D47915DA2225CF7E002B7123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47915D82225CF7E002B7123 /* LaunchScreen.storyboard */; };
+		D4BE99112229E6B7004EFFF8 /* RealmListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE99102229E6B7004EFFF8 /* RealmListing.swift */; };
+		D4BE9913222A5894004EFFF8 /* SP_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE9912222A5894004EFFF8 /* SP_Extension.swift */; };
+		D4BE9915222A58EF004EFFF8 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE9914222A58EF004EFFF8 /* SearchResult.swift */; };
+		D4BE9918222B1C64004EFFF8 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE9917222B1C64004EFFF8 /* ResultTableViewCell.swift */; };
+		D4BE991C222CD95E004EFFF8 /* ArmoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE991B222CD95E004EFFF8 /* ArmoryHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,7 @@
 		D407695922266C1F00E5544F /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
 		D407695C2227008C00E5544F /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		D407695F222709E700E5544F /* VC_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Extension.swift; sourceTree = "<group>"; };
+		D40769632227742400E5544F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D47915CC2225CF7D002B7123 /* WowCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47915CF2225CF7D002B7123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47915D12225CF7D002B7123 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +37,11 @@
 		D47915D62225CF7E002B7123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D47915D92225CF7E002B7123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D47915DB2225CF7E002B7123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4BE99102229E6B7004EFFF8 /* RealmListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmListing.swift; sourceTree = "<group>"; };
+		D4BE9912222A5894004EFFF8 /* SP_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SP_Extension.swift; sourceTree = "<group>"; };
+		D4BE9914222A58EF004EFFF8 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		D4BE9917222B1C64004EFFF8 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		D4BE991B222CD95E004EFFF8 /* ArmoryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmoryHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,9 @@
 			children = (
 				D407695722266BB100E5544F /* APICredentials.swift */,
 				D407695922266C1F00E5544F /* AuthToken.swift */,
+				D4BE99102229E6B7004EFFF8 /* RealmListing.swift */,
+				D4BE9914222A58EF004EFFF8 /* SearchResult.swift */,
+				D4BE991B222CD95E004EFFF8 /* ArmoryHelper.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -64,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D407695F222709E700E5544F /* VC_Extension.swift */,
+				D4BE9912222A5894004EFFF8 /* SP_Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -71,6 +87,7 @@
 		D47915C32225CF7D002B7123 = {
 			isa = PBXGroup;
 			children = (
+				D40769632227742400E5544F /* SearchViewController.swift */,
 				D47915CE2225CF7D002B7123 /* WowCompanion */,
 				D47915CD2225CF7D002B7123 /* Products */,
 			);
@@ -87,6 +104,7 @@
 		D47915CE2225CF7D002B7123 /* WowCompanion */ = {
 			isa = PBXGroup;
 			children = (
+				D4BE9916222B1C42004EFFF8 /* User Interface */,
 				D407695E222709D400E5544F /* Extensions */,
 				D407695B2227005900E5544F /* Networking */,
 				D407695622266B8E00E5544F /* Objects */,
@@ -98,6 +116,14 @@
 				D47915DB2225CF7E002B7123 /* Info.plist */,
 			);
 			path = WowCompanion;
+			sourceTree = "<group>";
+		};
+		D4BE9916222B1C42004EFFF8 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D4BE9917222B1C64004EFFF8 /* ResultTableViewCell.swift */,
+			);
+			path = "User Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,12 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BE9918222B1C64004EFFF8 /* ResultTableViewCell.swift in Sources */,
+				D4BE99112229E6B7004EFFF8 /* RealmListing.swift in Sources */,
 				D4076960222709E700E5544F /* VC_Extension.swift in Sources */,
+				D4BE9915222A58EF004EFFF8 /* SearchResult.swift in Sources */,
+				D40769642227742400E5544F /* SearchViewController.swift in Sources */,
+				D4BE9913222A5894004EFFF8 /* SP_Extension.swift in Sources */,
 				D47915D22225CF7D002B7123 /* ViewController.swift in Sources */,
 				D407695A22266C1F00E5544F /* AuthToken.swift in Sources */,
 				D407695D2227008C00E5544F /* APIRequests.swift in Sources */,
 				D47915D02225CF7D002B7123 /* AppDelegate.swift in Sources */,
 				D407695822266BB100E5544F /* APICredentials.swift in Sources */,
+				D4BE991C222CD95E004EFFF8 /* ArmoryHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

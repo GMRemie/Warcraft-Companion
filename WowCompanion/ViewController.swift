@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private let credentials = APICredentials.init()
+    internal var Realmlist = RealmListing.init()
     internal var token = AuthToken.init()
     
     override func viewDidLoad() {
@@ -20,12 +21,21 @@ class ViewController: UIViewController {
         GETToken(credentials: credentials)
         // Wait until our token is properly created
         while token.token == "0" {
-            
         }
         print(token.token)
+        
+        // Time to load our realmlists
+        GETRealmlists(token: token)
+        while Realmlist.GetRealmListStatus() != true{
+            
+        }
+        // Update our search page with the proper data
+        let secondTab = self.tabBarController?.viewControllers![1] as! SearchViewController
+        secondTab.realmList = Realmlist
+        secondTab.token = token
+        
+        
     }
-
-    
 
 }
 
